@@ -293,17 +293,25 @@ i {
 .resume-btn {
     display: inline-block;
     padding: 12px 22px;
-    background: linear-gradient(45deg, #ff7ce0, #8ab4ff);
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
+    background: transparent;
+    color: #8ab4ff;
     font-weight: 600;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    /* gradient border trick */
+    background: linear-gradient(#0a0a0a, #0a0a0a) padding-box,
+                linear-gradient(45deg, #ff7ce0, #8ab4ff) border-box;
+
     transition: 0.3s ease;
 }
 
+/* Hover effect */
 .resume-btn:hover {
-    background: linear-gradient(45deg, #ff7ce0, #8ab4ff);
-    transform: translateY(-2px);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(138, 180, 255, 0.4);
+    color: #ffffff;
 }
 
 
@@ -596,4 +604,5 @@ footer {
     .btn-link {
         padding: 8px 18px;
     }
+
 }
