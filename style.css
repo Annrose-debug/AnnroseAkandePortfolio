@@ -238,17 +238,21 @@ i {
 /* Button */
 .btn-link {
     display: inline-block;
-    padding: 10px 25px;
-    margin-top: 20px;
+    padding: 10px 22px;
+    margin-top: 15px;
     background: linear-gradient(45deg, #ff7ce0, #8ab4ff);
-    border-radius: 25px;
+    border-radius: 12px;
     text-decoration: none;
     color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     transition: 0.3s ease;
+    box-shadow: 0 0 12px rgba(255, 140, 230, 0.4);
 }
 
 .btn-link:hover {
-    transform: scale(1.07);
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px rgba(255, 140, 230, 0.7);
 }
 
 /* REVEAL ANIMATION */
@@ -290,9 +294,10 @@ i {
     margin-top: 20px;
 }
 
+/* ---- RESUME BUTTON (SECONDARY) ---- */
 .resume-btn {
     display: inline-block;
-    padding: 12px 22px;
+    padding: 12px 20px;
     background: transparent;
     color: #8ab4ff;
     font-weight: 600;
@@ -314,6 +319,26 @@ i {
     color: #ffffff;
 }
 
+.btn-secondary{
+    background: transparent;
+    color: #8ab4ff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+ background: linear-gradient(#0a0a0a, #0a0a0a) padding-box,
+                linear-gradient(45deg, #ff7ce0, #8ab4ff) border-box;
+
+    transition: 0.3s ease;
+    
+}
+
+.btn-secondary:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(138, 180, 255, 0.4);
+    color: #ffffff;
+}
 
 
 /* SKILLS */
@@ -385,10 +410,13 @@ i {
 
 .carousel {
     display: flex;
-    gap: 40px;
     transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    width: 100%;
     padding-bottom: 20px;
-    padding-top: 20px
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .carousel-arrow {
@@ -407,7 +435,8 @@ i {
     border-radius: 50%;
     transition: 0.3s;
     z-index: 10;
-    
+}
+
 .carousel-arrow:hover {
     background: rgba(255, 255, 255, 0.3);
 }
@@ -420,11 +449,6 @@ i {
     right: 10px;
 }
 
-/* Hide default scrollbar for carousel */
-.carousel {
-    overflow: hidden !important;
-    flex-wrap: nowrap;
-}
 
 
 .slide,
@@ -440,13 +464,12 @@ i {
 }
 
 .slide img {
-    width: 80%;
-    height: 350px;
+    width: 100%;
+    height: auto;
+    max-height: 280px;
     object-fit: cover;
     border-radius: 15px;
-    margin-bottom: 15px;
 }
-
 .slide h2 {
     margin-bottom: 10px;
 }
@@ -463,18 +486,22 @@ i {
 
 .project-buttons .btn {
     display: inline-block;
-    padding: 8px 18px;
+    padding: 12px 20px;
     margin-top: 15px;
+    margin-right: 10px;
     background: linear-gradient(45deg, #ff7ce0, #8ab4ff);
-    border-radius: 25px;
+    border-radius: 12px;
     text-decoration: none;
     color: #fff;
-    transition: 0.3s;
+    transition: 0.3s ease;
     margin-left: 10px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 12px rgba(255, 140, 230, 0.4);
 }
 
 .project-buttons .btn:hover {
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px rgba(255, 140, 230, 0.7);
 }
 
    /* CONTACT */
